@@ -4,13 +4,12 @@ const fs = require('fs');
 const read = require('./readFile');
 const write = require('./writeFile');
 
-function alterFile(file) {
-  read(file);
-  let text = data.toString().toUpperCase();
-  write(file);
-}
-
 module.exports = alterFile;
+
+
+
+
+
 // const alterFile = (file) => {
 //   fs.readFile( file, (err, data) => {
 //     if(err) { throw err; }
