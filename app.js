@@ -1,6 +1,9 @@
 'use strict';
 
 const fs = require('fs');
+const reader = require('./fileHandler/readFile');
+const toUp = require('./fileHandler/toUpper');
+const write = require('./fileHandler/writeFile');
 
 const alterFile = (file) => {
   fs.readFile( file, (err, data) => {
