@@ -1,10 +1,8 @@
-'use strict'; 
+'use strict';
 
-const fs = require('fs');
-const read = require('./readFile');
-const write = require('./writeFile');
-
-module.exports = alterFile;
+module.exports = data => {
+  return data.toString().toUpperCase();
+};
 
 
 

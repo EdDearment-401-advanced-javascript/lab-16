@@ -3,8 +3,16 @@
 const fs = require('fs');
 const reader = require('./fileHandler/readFile');
 const toUp = require('./fileHandler/toUpper');
-const write = require('./fileHandler/writeFile');
+const writer = require('./fileHandler/writeFile');
 
+const alterFile = file => {
+  reader(file)
+    .then(data => {
+      writer(file, Buffer.from(toUp(data) ) )
+    })
+    .then(event.emit('log', 'saved'))
+    .catch(err);
+}
 // const alterFile = (file) => {
 //   fs.readFile( file, (err, data) => {
 //     if(err) { throw err; }
