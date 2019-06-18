@@ -6,7 +6,7 @@
 
 ### Links and Resources
 * [submission PR](https://github.com/yourname-401-advanced-javascript/lab-16/pull/1)
-* [travis](http://xyz.com)
+* [travis](https://travis-ci.com/yourname-401-advanced-javascript/lab-16)
 * [back-end]() (when applicable)
 * [front-end](http://xyz.com) (when applicable)
 
