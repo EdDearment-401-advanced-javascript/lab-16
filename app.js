@@ -7,7 +7,11 @@ const event = require('./events/emit');
 require('./events/logger');
 require('./events/error');
 
-
+/**
+ * 
+ * @param {Object} file
+ * @desc Alters the passed file 
+ */
 const alterFile = file => {
   reader(file)
     .then(data => {

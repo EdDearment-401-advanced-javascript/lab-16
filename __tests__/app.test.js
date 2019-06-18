@@ -12,7 +12,10 @@ let readFile = mocks.readFile;
 let writeFile = mocks.writeFile;
 
 const file = 'myFile.txt';
-//Need to figure this out
+//Need to figure this out\
+// /*
+//  * @desc file alterer
+// */
 // describe('changing the file', () => {
 //   it('should call read', () => {
 //     expect(emit).toHaveBeenCalledWith('read', file);
@@ -22,7 +25,9 @@ const file = 'myFile.txt';
 //     expect(emit).toHaveBeenCalledWith('write', file);
 //   })
 // })
-
+/**
+ * @desc logger
+ */
 describe('logger emitter', () => {
   it('logs the event and the time', () => {
     let spy = jest.spyOn(console, 'log');
@@ -31,7 +36,9 @@ describe('logger emitter', () => {
     spy.mockRestore();
   });
 });
-
+/**
+ * @dec error test
+ */
 describe('error emitter', () => {
   it('logs a custom error message', () => {
     let spy = jest.spyOn(console, 'log');
@@ -41,7 +48,9 @@ describe('error emitter', () => {
   });
 });
 
-
+/**
+ * @desc Dummys
+ */
 describe('truth', () => {
   it('should return an error when file not found', () => {
     let theTruth = true;
