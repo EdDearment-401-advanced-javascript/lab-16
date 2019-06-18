@@ -3,7 +3,9 @@
 const reader = require('./fileHandler/readFile');
 const toUp = require('./fileHandler/toUpper');
 const writer = require('./fileHandler/writeFile');
-const event = require('./events');
+const event = require('./events/emit');
+require('./events/logger');
+require('./events/error');
 
 
 const alterFile = file => {
@@ -12,7 +14,7 @@ const alterFile = file => {
       writer(file, Buffer.from(toUp(data) ) )
     })
     .then(event.emit('log', 'saved'))
-    .catch(event.emit('error', log));
+    .catch(event.emit('error', 'log'));
 }
 
 //function alterfile
