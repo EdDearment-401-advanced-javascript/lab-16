@@ -43,5 +43,5 @@ Usage Notes or examples
 * What assertions need to be / should be made?
 
 #### UML
-![Lab16](assets/UMLlab16.JPG)
+![Lab16](https://raw.githubusercontent.com/yourname-401-advanced-javascript/lab-16/dev/assets/UMLlab16.JPG)
 # lab14-accessControl
