@@ -1,17 +1,17 @@
 'use strict';
 
 const event = require('../events/emit');
-require('../events/logger')
+require('../events/logger');
 require('../events/error');
-const emit = jest.spyOn(event, 'emit');
+//const emit = jest.spyOn(event, 'emit');
 
-const mocks = require('../__mocks__/fs');
+//const mocks = require('../__mocks__/fs');
 jest.mock('../__mocks__/fs');
 
-let readFile = mocks.readFile;
-let writeFile = mocks.writeFile;
+// let readFile = mocks.readFile;
+// let writeFile = mocks.writeFile;
 
-const file = 'myFile.txt';
+//const file = 'myFile.txt';
 //Need to figure this out\
 // /*
 //  * @desc file alterer

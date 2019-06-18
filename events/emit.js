@@ -3,4 +3,4 @@
 const emit = require('events');
 
 const events = new emit();
- module.exports = events;
+module.exports = events;
